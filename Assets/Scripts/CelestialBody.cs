@@ -8,7 +8,7 @@ using UnityEngine;
 */
 
 [ExecuteInEditMode]
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody), typeof(LineRenderer))]
 public class CelestialBody : GravityBody
 {
     public float radius;
