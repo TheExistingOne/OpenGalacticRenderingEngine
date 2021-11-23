@@ -43,6 +43,7 @@ public class CelestialBody : GravityBody
         mass = gravity * radius * radius / Universe.G;
         gameObject.name = bodyName;
         transform.localScale = Vector3.one * radius;
+        velocity = initialVelocity;
     }
 
 
