@@ -52,6 +52,8 @@ public class OrbitPreview : MonoBehaviour
                         virtualBodies[j].velocity += velocityChange;
                     }
                 }
+
+                virtualBodies[j].position += virtualBodies[j].velocity * timeStep;
             }
         }
 
