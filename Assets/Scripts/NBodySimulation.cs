@@ -12,6 +12,19 @@ public class NBodySimulation : MonoBehaviour
     CelestialBody[] bodies;
     static NBodySimulation instance;
 
+    [System.NonSerialized]
+    public bool simulationRunning = false;
+
+    public void StartSim()
+    {
+        simulationRunning = true;
+        CelestialBody[] objects = FindObjectsOfType<CelestialBody>();
+        foreach (CelestialBody body in objects)
+        {
+            body.PrepSim();
+        }
+    }
+
     // Initialize the simulation
     void Awake()
     {
@@ -22,17 +35,20 @@ public class NBodySimulation : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Apply physics to each body
-        for (int i = 0; i < bodies.Length; i++)
-        {   
-            Vector3 acceleration = CalculateAcceleration(bodies[i].Position, bodies[i]);
-            bodies[i].UpdateVelocity(acceleration, Universe.physicsTimeStep);
-        }
-
-        // Update positions of all bodies    
-        for (int i = 0; i < bodies.Length; i++)
+        if(simulationRunning)
         {
-            bodies[i].UpdatePosition(Universe.physicsTimeStep);
+            // Apply physics to each body
+            for (int i = 0; i < bodies.Length; i++)
+            {   
+                Vector3 acceleration = CalculateAcceleration(bodies[i].Position, bodies[i]);
+                bodies[i].UpdateVelocity(acceleration, Universe.physicsTimeStep);
+            }
+
+            // Update positions of all bodies    
+            for (int i = 0; i < bodies.Length; i++)
+            {
+                bodies[i].UpdatePosition(Universe.physicsTimeStep);
+            }
         }
     }
 

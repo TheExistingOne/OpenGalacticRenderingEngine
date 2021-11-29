@@ -13,9 +13,10 @@ public class OrbitPreview : MonoBehaviour
     public CelestialBody relativeBody;
 
     private float timeStep;
+    private bool drawOrbits = true;
 
-    void Update () {
-        if(!Application.isPlaying)
+    void LateUpdate () {
+        if(drawOrbits)
         {
             DrawOrbits();
         }
@@ -108,6 +109,16 @@ public class OrbitPreview : MonoBehaviour
                 lr.positionCount = steps;
                 lr.SetPosition(j, points[i, j]);
             }
+        }
+    }
+    public void ClearOrbits()
+    {
+        drawOrbits = false;
+        CelestialBody[] bodies = FindObjectsOfType<CelestialBody>();
+        foreach (var body in bodies)
+        {
+            LineRenderer lr = body.gameObject.GetComponent<LineRenderer>();
+            lr.positionCount = 0;
         }
     }
 

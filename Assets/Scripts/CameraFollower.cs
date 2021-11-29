@@ -7,9 +7,11 @@ public class CameraFollower : MonoBehaviour
     public Vector3 positionOffset;
 
     public GameObject target;
+    public NBodySimulation sim;
 
     void FixedUpdate()
     {
-        gameObject.transform.position = target.transform.position + positionOffset;       
+        if(sim.simulationRunning)
+            gameObject.transform.position = target.transform.position + positionOffset;       
     }
 }

@@ -15,17 +15,21 @@ public class CelestialBody : GravityBody
     public float gravity;
     public Vector3 initialVelocity;
     public string bodyName = "Unnamed Body";
-
+    public BodyType bodyType;
     public Vector3 velocity { get; private set; }
     public float mass { get; private set; }
     private Rigidbody rb;
+    private NBodySimulation sim;
 
     // Initialization
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        rb.mass = mass;
-        velocity = initialVelocity;
+    }
+
+    void Start()
+    {
+        sim = FindObjectOfType<NBodySimulation>();
     }
 
     // Update velocity by providing a force directly
@@ -39,13 +43,20 @@ public class CelestialBody : GravityBody
     }
 
     // Recalculate object after changing things in editor
-    void OnValidate() {
-        mass = gravity * radius * radius / Universe.G;
-        gameObject.name = bodyName;
-        transform.localScale = Vector3.one * radius;
-        velocity = initialVelocity;
+    void LateUpdate() {
+        if (!sim.simulationRunning)
+        {
+            mass = gravity * radius * radius / Universe.G;
+            gameObject.name = bodyName;
+            transform.localScale = Vector3.one * radius;
+            velocity = initialVelocity;
+        }
     }
 
+    public void PrepSim() {
+        rb.mass = mass;
+        velocity = initialVelocity;
+    }
 
     // Getters
     public Rigidbody Rigidbody {
