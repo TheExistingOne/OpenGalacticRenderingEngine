@@ -20,6 +20,9 @@ public class CelestialBody : GravityBody
     public float mass { get; private set; }
     private Rigidbody rb;
     private NBodySimulation sim;
+    
+    [System.NonSerialized]
+    public Vector3 startingPosition;
 
     // Initialization
     void Awake()
@@ -29,6 +32,7 @@ public class CelestialBody : GravityBody
 
     void Start()
     {
+        startingPosition = transform.position;
         sim = FindObjectOfType<NBodySimulation>();
     }
 

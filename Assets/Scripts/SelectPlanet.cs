@@ -8,16 +8,18 @@ public class SelectPlanet : MonoBehaviour
     public CelestialBody selected;
     private Camera source;
 
+    private NBodySimulation sim;
 
     void Start()
     {
         source = Camera.main;
+        sim = FindObjectOfType<NBodySimulation>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !sim.simulationRunning)
         {
             // Raycast from the camera to the mouse
             Ray ray = source.ScreenPointToRay(Input.mousePosition);
@@ -31,6 +33,13 @@ public class SelectPlanet : MonoBehaviour
                     FindObjectOfType<UIEditPanel>().PopulateFields();
                 }
             }
+        }
+    }
+
+    void LateUpdate()
+    {
+        if (sim.simulationRunning) {
+            selected = null;
         }
     }
 }

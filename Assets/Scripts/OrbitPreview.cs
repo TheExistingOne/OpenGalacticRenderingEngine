@@ -122,6 +122,11 @@ public class OrbitPreview : MonoBehaviour
         }
     }
 
+    public void EnableOrbits()
+    {
+        drawOrbits = true;
+    }
+
     private class VirtualBody {
         public Vector3 position;
         public Vector3 velocity;

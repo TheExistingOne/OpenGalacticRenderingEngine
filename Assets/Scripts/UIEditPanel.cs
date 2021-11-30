@@ -7,6 +7,8 @@ using TMPro;
 
 public class UIEditPanel : MonoBehaviour
 {
+    private NBodySimulation sim;
+
     [Header("Header Elements")]
     public RawImage image;
     public TextMeshProUGUI nameText;
@@ -30,12 +32,13 @@ public class UIEditPanel : MonoBehaviour
     void Start()
     {
         planetSelector = GetComponent<SelectPlanet>();
+        sim = FindObjectOfType<NBodySimulation>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (planetSelector.selected != null)
+        if (planetSelector.selected != null && !sim.simulationRunning)
         {
             image.texture = planetSelector.selected.bodyType.icon;
             nameText.text = planetSelector.selected.bodyName.ToUpper();
@@ -62,7 +65,7 @@ public class UIEditPanel : MonoBehaviour
 
     public void PopulateFields()
     {
-        if (planetSelector.selected != null)
+        if (planetSelector.selected != null && !sim.simulationRunning)
         {
             attraction.text = planetSelector.selected.gravity.ToString();
             radius.text = planetSelector.selected.radius.ToString();

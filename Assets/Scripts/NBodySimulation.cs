@@ -17,12 +17,29 @@ public class NBodySimulation : MonoBehaviour
 
     public void StartSim()
     {
-        simulationRunning = true;
-        CelestialBody[] objects = FindObjectsOfType<CelestialBody>();
-        foreach (CelestialBody body in objects)
+        if(!simulationRunning)
         {
-            body.PrepSim();
+            simulationRunning = true;
+            CelestialBody[] objects = FindObjectsOfType<CelestialBody>();
+            foreach (CelestialBody body in objects)
+            {
+                body.PrepSim();
+            }
         }
+    }
+
+    public void StopSim()
+    {
+        if(simulationRunning)
+        {
+            simulationRunning = false;
+            CelestialBody[] objects = FindObjectsOfType<CelestialBody>();
+            foreach (CelestialBody body in objects)
+            {
+                body.transform.position = body.startingPosition;
+            }
+        }
+        
     }
 
     // Initialize the simulation
