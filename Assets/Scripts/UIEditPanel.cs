@@ -29,6 +29,9 @@ public class UIEditPanel : MonoBehaviour
     public TMP_InputField velocityZ;
     private SelectPlanet planetSelector;
 
+    [Header("Data")]
+    public TextMeshProUGUI bodyText;
+
     void Start()
     {
         planetSelector = GetComponent<SelectPlanet>();
@@ -54,6 +57,7 @@ public class UIEditPanel : MonoBehaviour
             if ((velocityX.text != "") && (velocityY.text != "") && (velocityZ.text != ""))
                 planetSelector.selected.initialVelocity = new Vector3(float.Parse(velocityX.text), float.Parse(velocityY.text), float.Parse(velocityZ.text));
 
+            bodyText.text = planetSelector.selected.bodyType.description;
             // What the f** is this mess Unity? Why do I have to do this to work with your UI system? Why?
         }
         else

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b557febd2feaa94f588178ca3edcc4c9, type: 3}
+  m_Name: Mars
+  m_EditorClassIdentifier: 
+  className: 'Silicate Planet '
+  defaultColor: {r: 0.6132076, g: 0.3586239, b: 0.24007654, a: 0}
+  icon: {fileID: 2800000, guid: 23e66db46e6557d46825facea893060c, type: 3}
+  description: "<b>Mars:</b>\n\nDiameter - <b>4,212.3 miles</b>\n\nSurface Temperature
+    - <b>-20 \xB0F</b>\n\nDistance from Sun - <b>141.6 million miles</b>\n\nOrbit
+    Speed - <b>24.077 km/s</b>\n\nDays in Year - <b>687 days</b>\n\n---\nMars has
+    a thin atmosphere, which means liquids can\u2019t exist on Mars\u2019s surface,
+    also the atmosphere is 100 times less dense than Earth\u2019s. Mars\u2019s average
+    temperature is -30 degrees fahrenheit. Also Mars has the highest mountains and
+    lowest valley\u2019s. Mars has 2 moons, change the amount of moons to see what
+    happens to the planet!"

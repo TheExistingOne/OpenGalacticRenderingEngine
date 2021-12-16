@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b557febd2feaa94f588178ca3edcc4c9, type: 3}
+  m_Name: Mercury
+  m_EditorClassIdentifier: 
+  className: Silicate Planet
+  defaultColor: {r: 0.16820934, g: 0.40934557, b: 0.7924528, a: 1}
+  icon: {fileID: 2800000, guid: 23e66db46e6557d46825facea893060c, type: 3}
+  description: "<b>Mercury:</b>\n\nDiameter - <b>3,031.9 miles</b>\n\nSurface Temperature-
+    <b>800 \xB0F (day), -290 \xB0F (night)</b>\n\nDistance from Sun- <b>35.98 million
+    miles</b>\n\nOrbit Speed - <b>47.87 km/s</b>\n\nDays in Year - <b>88 days</b>\n\n---\nMercury
+    is the smallest planet in the solar system, it is only a little bigger than Earth\u2019s
+    moon! Even though it is the closest planet to the sun, Mercury is not the hottest
+    planet. The orbit of mercury is egg shaped rather than circular, change the speed
+    of the orbit to see what happens!"

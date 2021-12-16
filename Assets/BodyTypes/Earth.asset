@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b557febd2feaa94f588178ca3edcc4c9, type: 3}
+  m_Name: Earth
+  m_EditorClassIdentifier: 
+  className: Silicate Planet
+  defaultColor: {r: 0.2690489, g: 0.6603774, b: 0.22739409, a: 0}
+  icon: {fileID: 2800000, guid: 23e66db46e6557d46825facea893060c, type: 3}
+  description: "<b>Earth:</b>\n\nDiameter - <b>7,917.5 miles</b>\n\nSurface Temperature
+    - <b>61 \xB0F</b>\n\nDistance from Sun - <b>92.96 million miles</b>\n\nOrbit
+    Speed - <b>29.78 km/s</b>\n\nDays in Year - <b>365 days</b>\n\n---\nEarth\u2019s
+    atmosphere is made up of 78% nitrogen, 21% oxygen and 1 % of other materials.
+    That makes it possible for Earth to support life, also since it is a rocky planet
+    and mostly covered in water. Then the average surface temperatures are another
+    reason why Earth is the only planet that we know of that supports life."

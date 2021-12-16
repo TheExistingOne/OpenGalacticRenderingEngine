@@ -50,6 +50,15 @@ public class NBodySimulation : MonoBehaviour
         Debug.Log("FixedDeltaTime: " + Time.fixedDeltaTime);
     }
 
+    void Update()
+    {
+        // Close program when escape is pressed
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+
     void FixedUpdate()
     {
         if(simulationRunning)

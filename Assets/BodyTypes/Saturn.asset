@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b557febd2feaa94f588178ca3edcc4c9, type: 3}
+  m_Name: Saturn
+  m_EditorClassIdentifier: 
+  className: Gas Giant
+  defaultColor: {r: 0.8301887, g: 0.11409992, b: 0, a: 0}
+  icon: {fileID: 2800000, guid: 23e66db46e6557d46825facea893060c, type: 3}
+  description: "<b>Saturn: </b>\n\nDiameter - <b>72,367 miles</b>\n\nSurface Temperature
+    - <b>-218 \xB0F</b>\n\nDistance from Sun - <b>890.8 million miles</b>\n\nOrbit
+    Speed - <b>9.69 km/s</b>\n\nDays in Year - <b>10,585 days</b>\n\n---\nSaturn
+    is the second largest planet in our solar system, nine Earth\u2019s side by side
+    would be the width of Saturn. It has 53 moons and 29 waiting for confirmation.
+    Another interesting fact about Saturn is that it has short days but long years,
+    the day is about 10.7 hours long and the year is about 29 Earth years (10,585
+    days long). Play around with the mass of Saturn to see how you can change the
+    length of the year/ orbit speed."

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b557febd2feaa94f588178ca3edcc4c9, type: 3}
+  m_Name: Venus
+  m_EditorClassIdentifier: 
+  className: Silicate Planet
+  defaultColor: {r: 0.73529905, g: 0.745283, b: 0.49568352, a: 0}
+  icon: {fileID: 2800000, guid: 23e66db46e6557d46825facea893060c, type: 3}
+  description: '<b>Venus:</b>
+
+
+    Diameter- <b>7,520.8 miles</b>
+
+
+    Surface
+    temperature- <b>880 degrees Fahrenheit</b>
+
+
+    Distance from Sun- <b>67.24
+    million miles</b>
+
+
+    Orbit speed - <b>35.02 km/s</b>
+
+
+    Days in year -
+    <b>225 days</b>
+
+
+    ---
+
+    Venus is one of the brightest objects in the sky
+    from Earth, and Venus is just a little smaller in size than Earth. The air on
+    Venus is thick and hot, also the temperatures on Venus can melt lead! The temperatures
+    are hotter since this planet closer to the sun. Play with the size of the planet
+    to see what happens!'

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b557febd2feaa94f588178ca3edcc4c9, type: 3}
+  m_Name: Uranus
+  m_EditorClassIdentifier: 
+  className: Ice Giant
+  defaultColor: {r: 0.106532566, g: 0.26982504, b: 0.3962264, a: 0}
+  icon: {fileID: 2800000, guid: 23e66db46e6557d46825facea893060c, type: 3}
+  description: "<b>Uranus: </b>\n\nDiameter - <b>31,518 miles</b>\n\nSurface Temperature
+    - <b>-320 \xB0F</b>\n\nDistance from Sun - <b>1.784 billion miles</b>\n\nOrbit
+    Speed - <b>6.81 km/s</b>\n\nDays in Year - <b>30,660 days</b>\n\n---\nUranus
+    was the first planet found with a telescope, it is about 1.7 billion miles from
+    Earth. Uranus\u2019s day is about 17.5 hours long, and the year is about 30,660
+    days. It has 13 known rings, and is an ice giant. For size comparison think of
+    Earth as an apple, then Uranus would be the size of a basketball. You can play
+    around with the size to see what else changes Uranus. "

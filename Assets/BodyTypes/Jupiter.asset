@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b557febd2feaa94f588178ca3edcc4c9, type: 3}
+  m_Name: Jupiter
+  m_EditorClassIdentifier: 
+  className: Gas Giant
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  icon: {fileID: 2800000, guid: 23e66db46e6557d46825facea893060c, type: 3}
+  description: "<b>Jupiter: </b>\n\nDiameter - <b>86,881 miles</b>\n\nSurface Temperature
+    - <b>-162 \xB0F</b>\n\nDistance from Sun - <b>483.8 million miles</b>\n\nOrbit
+    Speed - <b>13.07 km/s</b>\n\nDays in Year - <b>4,380 days</b>\n\n---\nJupiter
+    is massive, about twice the size of all the other planets combined! Jupiter also
+    has a lot of moons, 53 confirmed and 26 more moons waiting for confirmation.
+    The planet is a gas giant, the innermost layers are made of ice, water and vapor.
+    Also the year on Jupiter is about 12 Earth years (4,380 days) making the orbit
+    very slow compared to Earth\u2019s orbit. Play around with the orbit speed and
+    see how that changed other things!"
