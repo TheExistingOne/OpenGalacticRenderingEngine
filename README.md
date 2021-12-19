@@ -1,6 +1,6 @@
 # Open Galactic Rendering Engine
 
-OGRE is a solar system simulation built in unity. It's physics is a Newtonian N-Body Simulation built on top of unity's built in physics. 
+OGRE is a solar system simulation built in unity.
 
 # Contributers
 
